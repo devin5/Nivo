@@ -12,12 +12,10 @@ const MyResponsivePie = ({ data /* see data tab */ }) => (
     innerRadius={0.5}
     padAngle={0.7}
     cornerRadius={3}
-
     //breaks color scheme  but came with code???
-   // colors={{ scheme: "nivo" }}
+    // colors={{ scheme: "nivo" }}
 
     borderWidth={1}
-
     //stackoverflows claims issues in package. needs hard set colors
     // borderColor={{ from: "color", modifiers: [["darker", 0.2]] }}
 
@@ -28,10 +26,11 @@ const MyResponsivePie = ({ data /* see data tab */ }) => (
     radialLabelsLinkDiagonalLength={16}
     radialLabelsLinkHorizontalLength={24}
     radialLabelsLinkStrokeWidth={1}
-
     //stackoverflows claims issues in package. needs hard set colors
     // radialLabelsLinkColor={{ from: "color" }}
-    
+
+    //fixes lebals color issue
+    radialLabelsLinkColor="#ff0000"
     slicesLabelsSkipAngle={10}
     slicesLabelsTextColor="#333333"
     animate={true}
