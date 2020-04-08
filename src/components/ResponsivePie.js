@@ -6,10 +6,11 @@ import React from "react";
 // website examples showcase many properties,
 // you'll often use just a few of them.
 const MyResponsivePie = ({ data /* see data tab */ }) => (
+    <div class="resPie">
   <ResponsivePie
     data={data}
     margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
-    innerRadius={0.5}
+    innerRadius={0.3}
     padAngle={0.7}
     cornerRadius={3}
     //breaks color scheme  but came with code???
@@ -57,12 +58,12 @@ const MyResponsivePie = ({ data /* see data tab */ }) => (
       },
     ]}
     fill={[
-      {
-        match: {
-          id: "ruby",
+        {
+          match: {
+            id: "ruby",
+          },
+          id: "dots",
         },
-        id: "dots",
-      },
       {
         match: {
           id: "c",
@@ -127,5 +128,6 @@ const MyResponsivePie = ({ data /* see data tab */ }) => (
       },
     ]}
   />
+  </div>
 );
 export default MyResponsivePie;

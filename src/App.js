@@ -1,13 +1,20 @@
-import React from 'react';
-import './App.css';
-import {data} from "./data/respoonsivePie"
-import MyResponsivePie from "./components/ResponsivePie.js"
+import React from "react";
+import "./App.css";
+import { data } from "./data/respoonsivePie";
+import MyResponsivePie from "./components/ResponsivePie.js";
+import { MyResponsiveAreaBump } from "./components/Chart";
+import { MyResponsiveChord } from "./components/Chord";
+import { MyResponsiveBar } from "./components/Bar";
 
 function App() {
   return (
     <div className="App">
-    <MyResponsivePie data={data}/>
-
+      <div className="container">
+        <MyResponsivePie data={data} />
+        <MyResponsiveChord />
+      </div>
+      <MyResponsiveAreaBump />
+      <MyResponsiveBar />
     </div>
   );
 }

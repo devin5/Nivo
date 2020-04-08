@@ -1,5 +1,28 @@
 .App {
   text-align: center;
-  height: 300px;
+}
+
+.resPie {
   width: 300px;
+  height: 300px;
+}
+
+.bump {
+  /* width: 300px; */
+  height: 300px;
+}
+.bar {
+  /* width: 300px; */
+  height: 300px;
+}
+
+.chord {
+  margin-left: 100px;
+  width: 400px;
+  height: 300px;
+}
+.container {
+  width: 700px;
+  display: flex;
+  margin: 0 auto;
 }
